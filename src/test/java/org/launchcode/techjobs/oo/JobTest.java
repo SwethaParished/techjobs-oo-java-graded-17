@@ -65,7 +65,7 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData() {
         String newline = System.lineSeparator();
         Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        String expected = newline + "ID: 1" + newline +
+        String expected = newline + "ID: 4" + newline +
                 "Name: Product tester" + newline +
                 "Employer: ACME" + newline +
                 "Location: Desert" + newline +
@@ -79,7 +79,7 @@ public class JobTest {
     public void testToStringHandlesEmptyField() {
         String newline = System.lineSeparator();
         Job job3 = new Job("Product tester", new Employer(""), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        String expected = newline + "ID: 1" + newline +
+        String expected = newline + "ID: 3" + newline +
                 "Name: Product tester" + newline +
                 "Employer: Data not available" + newline +
                 "Location: Desert" + newline +
